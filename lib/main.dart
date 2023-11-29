@@ -10,7 +10,7 @@ void main() {
         routes: screen_routes,
       ):CupertinoApp(
         debugShowCheckedModeBanner: false,
-        routes: ,
+        routes: app_routes,
       ),
   );
 }

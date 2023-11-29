@@ -4,7 +4,7 @@ import 'package:platform_converter_app/screen/dash/view/dash_screen_ios.dart';
 import 'package:platform_converter_app/screen/view/detail/detail_add_screen_ios.dart';
 
 Map<String,WidgetBuilder> screen_routes = {
-'/':(context) => DashScreenAndroid();
+'/':(context) => DashScreenAndroid(),
 
 };
 Map<String,WidgetBuilder> app_routes = {
