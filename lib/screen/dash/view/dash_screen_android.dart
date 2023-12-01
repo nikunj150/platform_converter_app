@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:platform_converter_app/screen/view/chat/chat_screen_android.dart';
-import 'package:platform_converter_app/screen/view/detail/detail_add_screen_android.dart';
-import 'package:platform_converter_app/screen/view/home/home_screen_android.dart';
-import 'package:platform_converter_app/screen/view/settings/settings_screen_android.dart';
+import 'package:platform_converter_app/screen/view/call/view/call_screen_android.dart';
+import 'package:platform_converter_app/screen/view/chat/view/chat_screen_android.dart';
+import 'package:platform_converter_app/screen/view/detail/view/detail_screen_android.dart';
+import 'package:platform_converter_app/screen/view/settings/view/settings_screen_android.dart';
+import 'package:platform_converter_app/utils/share_helper.dart';
+import 'package:provider/provider.dart';
+
+import '../../../utils/theme_provider.dart';
 
 class DashScreenAndroid extends StatefulWidget {
   const DashScreenAndroid({super.key});
@@ -37,15 +41,19 @@ class _DashScreenAndroidState extends State<DashScreenAndroid> {
               ],
             ),
             centerTitle: true,
+            actions: [
+
+            ],
           ),
-         body: TabBarView(
-           children: [
-              HomeScreenAndroid(),
-              DetailAddAndroid(),
-             CallScreenAndroid(),
-             SettingsScreenAndroid(),
-           ],
-         ),
+          body: TabBarView(
+            children: [
+              DetailScreenAndroid(),
+              ChatScreenAndroid(),
+              CallScreenAndroid(),
+              SettingsScreenAndroid(),
+            ],
+          ),
+
         ),
       ),
     );

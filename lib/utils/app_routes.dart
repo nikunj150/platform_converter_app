@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:platform_converter_app/screen/dash/view/dash_screen_android.dart';
 import 'package:platform_converter_app/screen/dash/view/dash_screen_ios.dart';
-import 'package:platform_converter_app/screen/view/detail/detail_add_screen_ios.dart';
 
 Map<String,WidgetBuilder> screen_routes = {
 '/':(context) => DashScreenAndroid(),
@@ -9,5 +8,5 @@ Map<String,WidgetBuilder> screen_routes = {
 };
 Map<String,WidgetBuilder> app_routes = {
 
-  '/':(context) => DetailAddScreenIos(),
+  '/':(context) => DashScreenIos(),
 };
